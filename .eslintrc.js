@@ -4,6 +4,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 6,
     sourceType: 'module',
+    parser: "babel-eslint",
     ecmaFeatures: {
       "jsx": true,
       "modules": true

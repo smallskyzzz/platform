@@ -1,13 +1,13 @@
 <template>
-  <el-container>
+  <el-container class="container">
     <el-aside width="200px">
-      <sideMenu></sideMenu>
+      <sideMenu style="height: 100%"></sideMenu>
     </el-aside>
     <el-container>
       <el-header>
         header
       </el-header>
-      <el-main>
+      <el-main class="main">
         <router-view></router-view>
       </el-main>
     </el-container>
@@ -25,6 +25,14 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
+  @import "~@/assets/css/common.less";
 
+  .container {
+    height: 100%;
+    .main {
+      padding: 10px;
+      background-color: @bg-color;
+    }
+  }
 </style>

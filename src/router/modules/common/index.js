@@ -2,7 +2,12 @@ export default [
   {
     path: '',
     name: '',
-    redirect: { name: 'home' }
+    redirect: {
+      name: 'home'
+    },
+    meta: {
+      hideInMenu: true
+    }
   }, {
     path: '/home',
     name: 'home',

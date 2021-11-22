@@ -6,15 +6,18 @@
         background-color="rgba(0, 21, 41, 1)"
         text-color="rgba(255, 255, 255, .6)"
     >
-      <el-menu-item
-        v-for="(r, i) in routers"
-        :key="r.name"
-        @click="handleClick(r)"
-        :index="i + ''"
-      >
-        <i class="el-icon-document"></i>
-        <span slot="title">{{ r.title }}</span>
-      </el-menu-item>
+      <!--过滤出hideInMenu项-->
+      <div v-for="(r, i) in routers">
+        <el-menu-item
+          v-if="!(r.meta && r.meta.hideInMenu)"
+          :key="r.name"
+          @click="handleClick(r)"
+          :index="i + ''"
+        >
+          <i class="el-icon-document"></i>
+          <span slot="title">{{ r.title }}</span>
+        </el-menu-item>
+      </div>
     </el-menu>
   </div>
 </template>

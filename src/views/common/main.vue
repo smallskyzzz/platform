@@ -5,7 +5,7 @@
     </el-aside>
     <el-container>
       <el-header>
-        header
+        <Header></Header>
       </el-header>
       <el-main class="main">
         <router-view></router-view>
@@ -16,11 +16,13 @@
 
 <script>
 import sideMenu from '@/components/sideMenu'
+import Header from '@/views/common/header'
 
 export default {
   name: "Main",
   components: {
-    sideMenu
+    sideMenu,
+    Header
   }
 }
 </script>

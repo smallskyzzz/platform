@@ -6,6 +6,9 @@ import '@/assets/css/reset.css'
 // element
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css';
+// 路由权限控制
+require('./permission')
+
 
 // element注册
 Vue.use(ElementUI)

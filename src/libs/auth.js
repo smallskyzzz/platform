@@ -8,3 +8,6 @@ export const setToken = (token) => Cookie.set(tokenKey, token, { expires: 365, p
 
 // 获取token
 export const getToken = () => Cookie.get(tokenKey)
+
+// 清除token
+export const removeToken = () => Cookie.remove(tokenKey, { path: '/' })

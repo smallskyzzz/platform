@@ -13,10 +13,5 @@ export default [
     name: 'home',
     title: '个人中心',
     component: () => import(/* webpackChunkName: "home" */'@/views/home/index')
-  }, {
-    path: '/baseData',
-    name: 'baseData',
-    title: '基础数据',
-    component: () => import(/* webpackChunkName: "home" */'@/views/baseData/index')
   },
 ]

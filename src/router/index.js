@@ -1,5 +1,7 @@
-import home from '@/router/modules/common/index'
+import common from '@/router/modules/common/index'
+import baseData from '@/router/modules/baseData/index'
 
 export default [
-  ...home,
+  ...common,
+  ...baseData
 ]
